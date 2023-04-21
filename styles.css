@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+#main-article {
+    background-image: url("imagenes/Gato.JPG");
+}
+
+#main {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+    height: 80vh;
+    max-height: 100vh;
+}
+
+#main>article {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main>nav {
+    flex: 0 20vw;
+    background: beige;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+header,
+footer,
+article,
+nav {
+    padding: 1em;
+}
+
+header,
+footer {
+    background: goldenrod;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    text-align: right;
+    color: white;
+}
+
+nav>button {
+    background-color:peru;
+    border-radius: 10px;
+    justify-self: flex-end;
+}
+
+header h1 {
+    color: white;
+}
+
+article h2 {
+    color: white;
+}
+
+#cat {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
