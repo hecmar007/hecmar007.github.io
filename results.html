@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
-  <body>
-    <h1> Datos enviados correctamente! </h1>
-    <p>
-    Gracias por presentarnos a tu gato!
-  </p>
-  <p><a href="./index.html">Volver al inicio</a></p>
-  <p><i>Copyright FHiC 2023</i></p>
-  </body>
+
+<head>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body id="main-body">
+  <header>
+    <h1> Gatalia: la web de los gatos </h1>
+  </header>
+  <div id="main">
+    <article>
+      <h1>Gracias por presentarnos a tu gato!</h1>
+      <h3>Lista de gatos registrados</h3>
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+        </tr>
+        <tr>
+          <td>{nombre}</td>
+          <td>{edad}</td>
+        </tr>
+      </table>
+      <p><a href="./index.html">Volver al inicio</a></p>
+    </article>
+    <nav>
+      <div>
+        <h3> Razas </h3>
+        <ul>
+          <li><a href="./siames.html">Siames</a></li>
+          <li><a href="./persa.html">Persa</a></li>
+        </ul>
+      </div>
+      <button><a href="./form.html">Sobre tu gato</a></button>
+    </nav>
+  </div>
+  <footer>
+    <p />
+    <p><i>Copyright FHiC 2023</i></p>
+  </footer>
+</body>
+
 </html>

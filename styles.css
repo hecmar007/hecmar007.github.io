@@ -14,13 +14,14 @@ body {
 #main {
     display: flex;
     min-height: calc(100vh - 40vh);
-    height: 80vh;
+    height: 72vh;
     max-height: 100vh;
 }
 
 #main>article {
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -32,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: space-between;
 }
 
 header,
@@ -69,7 +71,7 @@ footer p {
 }
 
 nav>button {
-    background-color:peru;
+    background-color: peru;
     border-radius: 10px;
     justify-self: flex-end;
 }
@@ -87,4 +89,52 @@ article h2 {
     flex-direction: column;
     align-items: left;
     justify-content: left;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: beige;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+table, td, th {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 5px 100px 5px 5px;
+}
+
+table tr:nth-child(even) {
+    background-color: beige;
 }
